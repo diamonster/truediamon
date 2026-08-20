@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>truediamon search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+</head>
+<body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: 'I1WYGM498D',
+        apiKey: '85fbd7f909703892d41c8b584ad646e7',
+        siteId: 'd3c1098f-4128-40c1-ac5c-195f502d9339',
+        branch: 'master',
+        selector: 'div#search',
+
+        analytics: true,                              // Enable search analytics
+        hitsPerPage: 5,                               // Amount of results to display
+        poweredBy: true,                              // Controls displaying the logo (mandatory with our FREE plan)
+        placeholder: 'Search...',                     // Input placeholder
+        openOnFocus: true,                            // Open search panel with default search, when focusing input
+
+        // Theme (dark)
+//        theme: {
+//        mark: '#fff',                                 // Color of the matching content
+//        background: '#23263b',                        // Background Color of the input and the panel
+//        selected: '#111432',                          // Background Color of the selected item
+//        text: '#d6d6e7',                              // Color of the title of the items
+//        colorSourceIcon: '#d6d6e7',                   // Color of the icon on the left of results
+//        }
+
+      });
+    </script>
+
+<div id="search"></div>
+
+</body>
+</html>

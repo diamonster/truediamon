@@ -1,0 +1,26 @@
+override_utf8_locale yes # форсируем UFT-8 локаль (нужно для xft)
+use_xft yes # используем xft
+xftfont DejaVu Sans:size=7 # хороший шрифт, требуется ttf-dejavu
+xftalpha 1 # коэффциент прозрачности
+update_interval 1.0 # частота обновления (на самом деле период)
+own_window yes # в отдельном окне
+own_window_type desktop # на десктопе (так же может быть normal или override)
+own_window_colour 505050 # цвет фона
+own_window_transparent 1
+double_buffer yes # двойная буферизация
+minimum_size 1024 10 # минимальный размер (ширина экрана 1280 пикселей)
+draw_shades no # отключаем тень
+alignment bottom_left #
+gap_x 0 # начальные координаты: X
+gap_y 0 # начальные координаты: Y
+short_units 1
+use_spacer right
+# $nodename - $sysname $kernel on $machine  |  
+TEXT
+${color lightgrey}${top name 3}	${top pid 5}	${top cpu 5} ${top mem 5}
+${color lightgrey}${top name 3}	${top pid 4}	${top cpu 4} ${top mem 4}
+${color lightgrey}${top name 3}	${top pid 3}	${top cpu 3} ${top mem 3}
+${color lightgrey}${top name 2}	${top pid 2}	${top cpu 2} ${top mem 2}
+${color #ddaa00}${top name 1}	${top pid 1}	${top cpu 1} ${top mem 1}
+${color}Name			PID	CPU%   MEM%
+${voffset 0}↓: ${downspeed eth0} kB/s (${totaldown eth0}) | ↑: ${upspeed eth0} kB/s (${totalup eth0})  |  Processes: $processes  |  RAM: ${mem}/${memmax}  |  Uptime:$uptime_short  |  Freq:$freq MHz  |  CPU: $cpu% ${cpugraph 7,20}${alignr}Bat: ${battery_percent BAT1}%  | ${time %a, %d %B %Y} | ${time %H:%M} |

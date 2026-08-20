@@ -1,0 +1,118 @@
+/* stylelint-disable stylistic/max-line-length */
+/* stylelint-disable stylistic/no-eol-whitespace */
+
+/* Blog header */
+.blog-header-logo {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: var(--bs-secondary-color);
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/* Blog post */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: var(--bs-secondary-color);
+}
+.blog-post-header-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--bs-border-radius);
+  margin-bottom: 1rem;
+}
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Blog footer */
+.cc-icons {
+  display: inline-block;
+  line-height: 1;
+}
+.cc-icon {
+  color: currentColor;
+  text-decoration: none;
+}
+.cc-svg {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  margin: 0 0.15em;
+}
+.cc-icon:hover {
+  opacity: 0.7;
+}
+
+/* Disqus picks its light/dark scheme from the inherited text color */
+#disqus_thread {
+  color: var(--bs-body-color);
+}
+
+/* Sidebar modules */
+.sidebar-module {
+  padding: 1rem;
+}
+.sidebar-module-inset {
+  background-color: var(--bs-tertiary-bg);
+  border-radius: var(--bs-border-radius);
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ol:last-child,
+.sidebar-module-inset ul:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .blog-header-logo {
+    font-size: 3.5rem;
+  }
+}
+
+/* Header search (Algolia widget) */
+#search {
+  flex: 1 1 auto;
+  min-width: 6rem;
+  margin-right: 0.25rem;
+}
+#search .aa-Autocomplete {
+  position: relative;
+}
+@media (max-width: 575px) {
+  #search {
+    flex-basis: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Tables */
+.blog-post table {
+  width: auto;
+  min-width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.blog-post th,
+.blog-post td {
+  border: 1px solid var(--bs-border-color);
+  padding: 0.5rem 0.75rem;
+}
+.blog-post th {
+  background-color: var(--bs-tertiary-bg);
+  font-weight: 600;
+}
