@@ -20,6 +20,9 @@
 }
 
 /* Blog post */
+main {
+  margin-top: 4rem;
+}
 .blog-post {
   margin-bottom: 4rem;
 }
