@@ -27,7 +27,12 @@ main {
   margin-bottom: 4rem;
 }
 .blog-post-meta {
-  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--bs-secondary-color);
+}
+
+.blog-post-translations {
+  font-size: 0.875rem;
   color: var(--bs-secondary-color);
 }
 .blog-post-header-img {
